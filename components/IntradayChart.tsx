@@ -41,7 +41,7 @@ const IntradayChart: React.FC<IntradayChartProps> = ({ symbol, apiKey }) => {
                 
                 console.log(response.data)
 
-                const timeSeries = response.data['Time Series (5min)'];
+                const timeSeries = response.data['Time Series (60min)'];
                 if (timeSeries) {
                     // Retrieve data based on selected priceType
                     const labels = Object.keys(timeSeries).reverse(); // Dates for x-axis
