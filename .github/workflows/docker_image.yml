@@ -9,6 +9,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - name: build image
-        run: docker build ./stock_options_graphs/ -t nomaan308/stockoptiongraph:latest
+        run: docker build . -t nomaan308/stockoptiongraph:latest
       - name: push image to docker hub
         run: docker push nomaan308/stockoptiongraph:latest
